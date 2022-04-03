@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="w-3/4 mx-auto">
+    <section>
+        <h4 class="mt-6 text-center text-3xl">Welcome to <span class="text-fuchsia-300">ABC</span> banking</h4>
+    </section>
+    <section class="mt-5 bg-green-100 p-5">
+        <h3>Please login</h3>
+        <form class="">
+            <input type="text" id="userid" class="border-2 block w-3/4 border-gray-400 rounded-md px-1 mt-3" id="" placeholder="User id">
+            <input type="password" id="pass" class="border-2 block w-3/4 border-gray-400 rounded-md px-1 mt-3" id="" placeholder="Passaword">
+            <button type="submit" id="loginbtn" class="text-white mt-2 bg-yellow-600 rounded px-4 py-1">login</button>
+        </form>
+    </section>
+    <!-- <script src="js/home.js"></script> -->
+<script>
+    document.getElementById('loginbtn').addEventListener('click',function(){
+    const emailField = document.getElementById('userid');
+    const usermail= emailField.value;
+    
+    const passwordField = document.getElementById('pass');
+    const userpass= passwordField.value;
+
+    if( usermail== 'abc@gmail.com' && userpass == 'abc'){
+        window.location.href = 'banking.html';
+    }
+})
+</script>
+</body>
+</html>
